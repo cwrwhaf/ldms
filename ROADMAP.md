@@ -30,6 +30,7 @@ didnt see the need for seed data in the db but obviously would use flyway/liquib
 - Integration tests on the Controllers with mockMvc (or rest assured? Never used) and dbunit so we can input real data 
 and test the schema of the object returned and status codes for errors. (ive never seen the value of this until recently when we upgraded a boot version and the json returned had changed)
 - unit tests for the converters to make sure the right value is converted
+- generateAmortisations needs refactoring as its a bit difficult to unit test right now
 
 ### Double
 - there has to be a better data type than a double? theres a lot of rounding to decimal places, or possibly find a better place to round?
